@@ -68,8 +68,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-#Creating the Executable
-#Since you want this as an executable, follow these steps to package it:
+#Steps to use as an Executable
 
 #Install Dependencies:
 #Open your terminal and run:
