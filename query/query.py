@@ -1,19 +1,14 @@
+# Download Ollama to use: https://ollama.com/
+
 # Run the following commands in your terminal:
-# pip install openai pydantic
-# export OPENAI_API_KEY="your-api-key-here"
-
-
-import os
+# ollama pull llama3.1
+# pip install ollama pydantic
 import json
+import ollama
 from pydantic import BaseModel, Field
 from typing import Optional
-from openai import OpenAI
 
-# 1. Initialize the client
-# (Requires the OPENAI_API_KEY environment variable to be set)
-client = OpenAI()
-
-# 2. Define the exact structure we want the LLM to return using Pydantic
+# 1. Define the exact structure we want using Pydantic
 class FigureProfile(BaseModel):
     name: str = Field(description="The full name of the figure.")
     age: str = Field(description="Current age, or age at the time of death.")
@@ -32,25 +27,27 @@ class FigureProfile(BaseModel):
     controversy: Optional[str] = Field(default=None, description="Notable controversies or criticisms surrounding them.")
 
 def fetch_figure_info(figure_name: str) -> str:
-    """Fetches structured data about a figure from the LLM."""
+    """Fetches structured data using a local Llama model via Ollama."""
     
-    print(f"Fetching data for: {figure_name}...\n")
+    print(f"Fetching data for: {figure_name} using local Llama 3.1...\n")
     
     try:
-        # 3. Call the LLM, passing our Pydantic schema to enforce the output format
-        completion = client.beta.chat.completions.parse(
-            model="gpt-4o-mini", # You can change this to your preferred model
+        # 2. Call local Ollama. No API key needed!
+        # We pass the Pydantic schema to the 'format' parameter to enforce JSON output.
+        response = ollama.chat(
+            model='llama3.1',
             messages=[
-                {"role": "system", "content": "You are an expert historian and biographer. Extract the requested information about the provided figure. If a field like death, controversy, or military service is not applicable, leave it null."},
+                {"role": "system", "content": "You are an expert historian. Extract the requested information about the provided figure. If a field like death, controversy, or military service is not applicable, leave it null."},
                 {"role": "user", "content": f"Provide a detailed profile for: {figure_name}"}
             ],
-            response_format=FigureProfile,
+            format=FigureProfile.model_json_schema()
         )
 
-        # 4. Extract the structured response
-        profile = completion.choices[0].message.parsed
+        # 3. Parse the raw JSON string returned by Llama into our Pydantic model to ensure it is valid
+        raw_json_string = response['message']['content']
+        profile = FigureProfile.model_validate_json(raw_json_string)
         
-        # Convert the Pydantic model to a formatted JSON string for clean printing
+        # 4. Convert back to a cleanly formatted JSON string for printing
         return json.dumps(profile.model_dump(exclude_none=True), indent=4)
 
     except Exception as e:
@@ -58,8 +55,8 @@ def fetch_figure_info(figure_name: str) -> str:
 
 # --- Example Usage ---
 if __name__ == "__main__":
-    # You can change this to any historical or prominent figure
-    target_figure = "Winston Churchill" 
+    # Ensure the Ollama app is running in the background before executing this!
+    target_figure = "Cleopatra" 
     
     result = fetch_figure_info(target_figure)
     print(result)
