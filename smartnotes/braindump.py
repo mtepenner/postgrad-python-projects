@@ -67,3 +67,26 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Creating the Executable
+#Since you want this as an executable, follow these steps to package it:
+
+#Install Dependencies:
+#Open your terminal and run:
+#pip install g4f PyInstaller
+
+#Build the EXE:
+#Run this command in the folder where you saved the script:
+#pyinstaller --onefile --console brain_dump.py
+
+#Find the File:
+#Once it finishes, look inside the newly created dist/ folder. You’ll find brain_dump.exe. You can move this to your desktop and run it anytime!
+
+#3. How to Use It
+#Run the App: Double-click your new .exe file.
+
+#Brain Dump: Type or paste your messy thoughts.
+
+#Trigger: Type FINISHEDNOTES and press Enter.
+
+#Result: The AI will automatically name the file (e.g., PROJECT_X_PLAN.md) and save it in the same folder as the app.
