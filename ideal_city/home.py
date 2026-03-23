@@ -3,19 +3,14 @@ import os
 
 def load_cities_from_csv(filename="cities.csv"):
     cities = {}
-    
-    # Check if file exists before trying to open it
     if not os.path.exists(filename):
         print(f"Error: Could not find '{filename}'.")
-        print("Please ensure the CSV file is in the same folder as this script.")
         return None
 
     with open(filename, mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
-        
         for row in reader:
             city_name = row['City']
-            # Convert the string values from the CSV into integers
             traits = [
                 int(row['Warm Winters']),
                 int(row['Affordable']),
@@ -35,10 +30,9 @@ def load_cities_from_csv(filename="cities.csv"):
     return cities
 
 def comprehensive_city_matcher():
-    # Load the data from the CSV file
     cities = load_cities_from_csv()
     if not cities:
-        return # Stop the script if the CSV didn't load
+        return
 
     questions = [
         "1. Does harsh winter weather or a lack of sunlight negatively impact your mood? (Warm Winters)",
@@ -56,7 +50,7 @@ def comprehensive_city_matcher():
     ]
 
     print("\n" + "="*50)
-    print("   THE CSV-POWERED CITY & MENTAL HEALTH MATCHER")
+    print("   THE CSV-POWERED CITY MATCHER (DEALBREAKER EDITION)")
     print("="*50)
     print("Answer 'y' or 'n' to the following questions.\n")
 
@@ -69,11 +63,43 @@ def comprehensive_city_matcher():
                 break
             print("Please answer with just 'y' or 'n'.")
 
-    # Scoring mechanism
+    # The Dealbreaker Prompt
+    print("\n" + "-"*50)
+    print("DEALBREAKERS")
+    print("Are any of your answers absolute dealbreakers?")
+    print("For example, if you answered 'y' to Coastal (Question 4) and you MUST live on the water, type 4.")
+    print("If you have multiple, separate them with commas (e.g., 1,4,9). If none, just press Enter.")
+    
+    db_input = input("\nEnter dealbreaker numbers: ").strip()
+    
+    dealbreaker_indices = []
+    if db_input:
+        try:
+            # Convert user input like "1, 4, 9" into list indices [0, 3, 8]
+            dealbreaker_indices = [int(x.strip()) - 1 for x in db_input.split(',')]
+        except ValueError:
+            print("Invalid input. Proceeding without dealbreakers...")
+
+    # Scoring & Elimination mechanism
     results = []
     total_factors = len(user_prefs)
     
     for city, traits in cities.items():
+        failed_dealbreaker = False
+        
+        # Check if the city fails any of the user's dealbreakers
+        for idx in dealbreaker_indices:
+            # Make sure the index is valid (0-11)
+            if 0 <= idx < total_factors: 
+                if traits[idx] != user_prefs[idx]:
+                    failed_dealbreaker = True
+                    break
+        
+        # If it failed a dealbreaker, skip scoring it entirely
+        if failed_dealbreaker:
+            continue
+
+        # If it survived, calculate the match percentage
         score = sum(1 for i in range(total_factors) if traits[i] == user_prefs[i])
         match_percentage = round((score / total_factors) * 100)
         results.append((city, match_percentage))
@@ -82,12 +108,18 @@ def comprehensive_city_matcher():
     results.sort(key=lambda x: x[1], reverse=True)
 
     print("\n" + "="*50)
-    print(f"🌟 YOUR TOP MATCH: {results[0][0]} ({results[0][1]}% Match)")
-    print("="*50)
-    
-    print("\nOther highly compatible cities:")
-    for city, match in results[1:6]: # Show top 5 runner-ups
-        print(f"- {city}: {match}% Match")
+    if not results:
+        print("❌ NO MATCHES FOUND.")
+        print("Your dealbreakers were too strict! No city in the database fit your exact requirements.")
+    else:
+        print(f"🌟 YOUR TOP MATCH: {results[0][0]} ({results[0][1]}% Match)")
+        print("="*50)
+        
+        if len(results) > 1:
+            print("\nOther cities that survived your dealbreakers:")
+            # Show up to 10 runner-ups since the list is huge
+            for city, match in results[1:11]: 
+                print(f"- {city}: {match}% Match")
 
 if __name__ == "__main__":
     comprehensive_city_matcher()
