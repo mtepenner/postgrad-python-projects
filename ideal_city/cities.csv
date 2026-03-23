@@ -1,0 +1,206 @@
+City,Warm Winters,Affordable,Nature Access,Coastal,Walkable,Relaxed Pace,Top Healthcare,Progressive,Low Noise,Strong Job Market,High Sunshine,Strong Arts
+New York NY,0,0,0,1,1,0,1,1,0,1,0,1
+Los Angeles CA,1,0,1,1,0,0,1,1,0,1,1,1
+Denver CO,0,0,1,0,1,0,1,1,0,1,1,0
+Austin TX,1,0,1,0,0,0,1,1,0,1,1,1
+Miami FL,1,0,0,1,1,0,1,1,0,1,1,1
+Portland OR,0,0,1,0,1,1,1,1,0,1,0,1
+San Diego CA,1,0,1,1,1,1,1,1,0,1,1,1
+Santa Barbara CA,1,0,1,1,1,1,1,1,1,0,1,1
+Charleston SC,1,0,0,1,1,1,1,0,1,0,1,1
+Cape May NJ,0,0,1,1,1,1,1,1,1,0,0,0
+Virginia Beach VA,1,1,1,1,0,1,1,0,0,1,1,0
+San Francisco CA,1,0,1,1,1,0,1,1,0,1,1,1
+Seattle WA,0,0,1,1,1,0,1,1,0,1,0,1
+Chicago IL,0,1,0,1,1,0,1,1,0,1,0,1
+Boston MA,0,0,0,1,1,0,1,1,0,1,0,1
+Washington DC,0,0,0,1,1,0,1,1,0,1,0,1
+Philadelphia PA,0,1,0,0,1,0,1,1,0,1,0,1
+Houston TX,1,1,0,1,0,0,1,0,0,1,1,0
+Dallas TX,1,1,0,0,0,0,1,0,0,1,1,0
+Phoenix AZ,1,1,1,0,0,0,1,0,0,1,1,0
+Atlanta GA,1,1,0,0,0,0,1,1,0,1,1,1
+Minneapolis MN,0,1,1,0,1,0,1,1,0,1,0,1
+Salt Lake City UT,0,1,1,0,1,1,1,1,0,1,1,0
+Charlotte NC,1,1,0,0,0,0,1,0,0,1,1,0
+Raleigh NC,1,1,1,0,0,1,1,1,0,1,1,0
+Nashville TN,1,1,0,0,0,0,1,0,0,1,1,1
+Orlando FL,1,1,0,0,0,0,1,0,0,1,1,0
+Tampa FL,1,1,0,1,0,0,1,0,0,1,1,0
+Detroit MI,0,1,0,0,0,0,1,1,0,0,0,1
+Cleveland OH,0,1,0,1,0,0,1,1,0,0,0,1
+Cincinnati OH,0,1,0,0,0,0,1,0,0,0,0,1
+Pittsburgh PA,0,1,0,0,1,0,1,1,0,0,0,1
+Baltimore MD,0,1,0,1,1,0,1,1,0,0,0,1
+St. Louis MO,0,1,0,0,0,0,1,0,0,0,0,1
+Kansas City MO,0,1,0,0,0,0,1,0,0,1,0,1
+Milwaukee WI,0,1,0,1,1,0,1,1,0,0,0,1
+Indianapolis IN,0,1,0,0,0,0,1,0,0,1,0,0
+Columbus OH,0,1,0,0,0,0,1,1,0,1,0,1
+San Antonio TX,1,1,0,0,0,1,1,0,0,1,1,0
+Las Vegas NV,1,1,1,0,0,0,0,0,0,1,1,0
+Honolulu HI,1,0,1,1,1,1,1,1,0,0,1,0
+Anchorage AK,0,1,1,1,0,1,1,0,1,0,0,0
+Sacramento CA,1,0,1,0,0,1,1,1,0,1,1,0
+San Jose CA,1,0,1,0,0,0,1,1,0,1,1,1
+Oakland CA,1,0,1,1,1,0,1,1,0,1,1,1
+Long Beach CA,1,0,0,1,1,1,1,1,0,1,1,0
+Fresno CA,1,1,1,0,0,1,1,0,0,0,1,0
+Tucson AZ,1,1,1,0,0,1,1,1,0,0,1,0
+Albuquerque NM,1,1,1,0,0,1,1,1,0,0,1,0
+Colorado Springs CO,0,1,1,0,0,1,1,0,0,1,1,0
+Boise ID,0,1,1,0,1,1,1,0,0,1,1,0
+Omaha NE,0,1,0,0,0,1,1,0,0,1,0,0
+Des Moines IA,0,1,0,0,0,1,1,0,0,1,0,0
+Madison WI,0,1,1,0,1,1,1,1,0,1,0,1
+Ann Arbor MI,0,0,1,0,1,1,1,1,0,1,0,1
+Boulder CO,0,0,1,0,1,1,1,1,0,1,1,1
+Asheville NC,0,0,1,0,1,1,0,1,1,0,1,1
+Savannah GA,1,1,0,1,1,1,0,0,1,0,1,1
+Wilmington NC,1,1,1,1,0,1,1,0,1,0,1,0
+St. Petersburg FL,1,1,0,1,1,1,1,1,0,1,1,1
+Key West FL,1,0,1,1,1,1,0,1,1,0,1,1
+Galveston TX,1,1,0,1,0,1,1,0,1,0,1,0
+Corpus Christi TX,1,1,0,1,0,1,0,0,1,0,1,0
+Monterey CA,1,0,1,1,1,1,1,1,1,0,1,0
+Santa Cruz CA,1,0,1,1,1,1,0,1,1,0,1,0
+Portland ME,0,0,1,1,1,1,1,1,1,0,0,1
+Providence RI,0,1,0,1,1,1,1,1,0,1,0,1
+Newport RI,0,0,1,1,1,1,1,1,1,0,0,1
+New Haven CT,0,1,0,1,1,1,1,1,0,1,0,1
+Burlington VT,0,0,1,0,1,1,1,1,1,0,0,1
+Richmond VA,0,1,0,0,1,1,1,1,0,1,0,1
+Lexington KY,0,1,0,0,0,1,1,0,0,1,0,0
+Louisville KY,0,1,0,0,0,1,1,0,0,1,0,1
+Grand Rapids MI,0,1,1,0,0,1,1,0,0,1,0,0
+Spokane WA,0,1,1,0,0,1,1,0,0,1,0,0
+Tacoma WA,0,1,1,1,0,1,1,1,0,1,0,0
+Eugene OR,0,1,1,0,1,1,1,1,1,0,0,1
+Bend OR,0,0,1,0,1,1,1,0,1,1,1,0
+Reno NV,0,1,1,0,0,1,1,0,0,1,1,0
+Tulsa OK,1,1,0,0,0,1,1,0,0,1,1,0
+Oklahoma City OK,1,1,0,0,0,1,1,0,0,1,1,0
+Baton Rouge LA,1,1,0,0,0,1,1,0,0,0,1,0
+New Orleans LA,1,1,0,1,1,1,0,1,0,0,1,1
+Mobile AL,1,1,0,1,0,1,1,0,1,0,1,0
+Birmingham AL,1,1,0,0,0,1,1,0,0,0,1,0
+Huntsville AL,1,1,0,0,0,1,1,0,0,1,1,0
+Greenville SC,1,1,1,0,1,1,1,0,0,1,1,0
+Naples FL,1,0,1,1,0,1,1,0,1,0,1,0
+Fort Lauderdale FL,1,0,0,1,1,0,1,1,0,1,1,1
+Tallahassee FL,1,1,1,0,0,1,1,0,0,0,1,0
+Syracuse NY,0,1,1,0,0,1,1,1,0,0,0,0
+Buffalo NY,0,1,0,1,0,1,1,1,0,0,0,0
+Rochester NY,0,1,0,1,0,1,1,1,0,0,0,0
+Albany NY,0,1,1,0,0,1,1,1,0,1,0,0
+El Paso TX,1,1,1,0,0,1,0,0,0,0,1,0
+Memphis TN,1,1,0,0,0,1,1,0,0,0,1,1
+Santa Fe NM,0,0,1,0,1,1,1,1,1,0,1,1
+Knoxville TN,0,1,1,0,0,1,1,0,1,1,0,1
+Chattanooga TN,0,1,1,0,0,1,1,0,1,1,0,1
+Huntsville AL,1,1,1,0,0,1,1,0,1,1,1,0
+Pensacola FL,1,1,1,1,0,1,1,0,1,0,1,0
+St. Augustine FL,1,0,1,1,1,1,1,0,1,0,1,1
+Destin FL,1,0,1,1,0,1,0,0,1,0,1,0
+Gulf Shores AL,1,1,1,1,0,1,0,0,1,0,1,0
+Myrtle Beach SC,1,1,0,1,0,1,0,0,1,0,1,0
+Hilton Head SC,1,0,1,1,0,1,1,0,1,0,1,0
+Wilmington DE,0,1,0,1,0,0,1,1,0,1,0,0
+Rehoboth Beach DE,0,0,1,1,1,1,1,1,1,0,0,0
+Ocean City MD,0,0,1,1,1,1,0,0,1,0,0,0
+Annapolis MD,0,0,1,1,1,1,1,1,1,1,0,1
+Frederick MD,0,1,1,0,1,1,1,1,1,1,0,0
+Richmond VA,0,1,1,0,1,1,1,1,0,1,0,1
+Charlottesville VA,0,0,1,0,1,1,1,1,1,1,0,1
+Roanoke VA,0,1,1,0,0,1,1,0,1,0,0,0
+Winston-Salem NC,0,1,1,0,0,1,1,0,1,1,0,1
+Durham NC,0,1,1,0,0,1,1,1,0,1,0,1
+Chapel Hill NC,0,0,1,0,1,1,1,1,1,1,0,1
+Greenville NC,0,1,0,0,0,1,1,0,1,0,0,0
+Athens GA,1,1,0,0,1,1,1,1,1,0,1,1
+Augusta GA,1,1,0,0,0,1,1,0,1,1,1,0
+Macon GA,1,1,0,0,0,1,1,0,1,0,1,0
+Jackson MS,1,1,0,0,0,1,0,0,1,0,1,0
+Little Rock AR,1,1,1,0,0,1,1,0,1,0,1,0
+Fayetteville AR,0,1,1,0,0,1,1,0,1,1,0,0
+Columbia MO,0,1,1,0,1,1,1,0,1,0,0,0
+Springfield MO,0,1,1,0,0,1,1,0,1,0,0,0
+Des Moines IA,0,1,0,0,0,1,1,0,1,1,0,0
+Iowa City IA,0,1,0,0,1,1,1,1,1,0,0,1
+Omaha NE,0,1,0,0,0,1,1,0,1,1,0,0
+Lincoln NE,0,1,0,0,0,1,1,0,1,1,0,0
+Wichita KS,0,1,0,0,0,1,1,0,1,0,0,0
+Topeka KS,0,1,0,0,0,1,1,0,1,0,0,0
+Fort Collins CO,0,0,1,0,1,1,1,1,1,1,1,1
+Bozeman MT,0,0,1,0,1,1,1,1,1,1,0,0
+Missoula MT,0,0,1,0,1,1,1,1,1,0,0,1
+Billings MT,0,1,1,0,0,1,1,0,1,0,0,0
+Jackson WY,0,0,1,0,1,1,1,0,1,0,0,1
+Cheyenne WY,0,1,1,0,0,1,1,0,1,0,0,0
+Boise ID,0,1,1,0,1,1,1,0,1,1,1,0
+Coeur d'Alene ID,0,0,1,0,1,1,1,0,1,0,0,0
+Provo UT,0,1,1,0,0,1,1,0,1,1,1,0
+Ogden UT,0,1,1,0,0,1,1,0,1,1,1,0
+Flagstaff AZ,0,0,1,0,1,1,1,1,1,0,1,0
+Sedona AZ,1,0,1,0,1,1,0,1,1,0,1,1
+Las Cruces NM,1,1,1,0,0,1,1,1,1,0,1,0
+Carmel CA,1,0,1,1,1,1,1,1,1,0,1,1
+Laguna Beach CA,1,0,1,1,1,1,1,1,1,0,1,1
+Irvine CA,1,0,1,1,0,0,1,1,0,1,1,0
+Pasadena CA,1,0,1,0,1,0,1,1,0,1,1,1
+Bakersfield CA,1,1,1,0,0,1,1,0,1,0,1,0
+Stockton CA,1,1,0,0,0,1,1,0,1,0,1,0
+Modesto CA,1,1,0,0,0,1,1,0,1,0,1,0
+Salem OR,0,1,1,0,0,1,1,1,1,0,0,0
+Olympia WA,0,1,1,1,1,1,1,1,1,0,0,0
+Bellingham WA,0,0,1,1,1,1,1,1,1,0,0,1
+Fargo ND,0,1,0,0,0,1,1,0,1,1,0,0
+Sioux Falls SD,0,1,0,0,0,1,1,0,1,1,0,0
+Duluth MN,0,1,1,1,0,1,1,1,1,0,0,0
+Green Bay WI,0,1,0,1,0,1,1,0,1,0,0,0
+Appleton WI,0,1,0,0,0,1,1,0,1,0,0,0
+Rockford IL,0,1,0,0,0,1,1,0,1,0,0,0
+Peoria IL,0,1,0,0,0,1,1,0,1,0,0,0
+Fort Wayne IN,0,1,0,0,0,1,1,0,1,0,0,0
+South Bend IN,0,1,0,0,0,1,1,0,1,0,0,0
+Toledo OH,0,1,0,1,0,1,1,0,1,0,0,0
+Dayton OH,0,1,0,0,0,1,1,0,1,0,0,0
+Akron OH,0,1,0,0,0,1,1,0,1,0,0,0
+Erie PA,0,1,0,1,0,1,1,0,1,0,0,0
+Allentown PA,0,1,0,0,0,1,1,0,1,0,0,0
+Harrisburg PA,0,1,0,0,0,1,1,0,1,0,0,0
+Scranton PA,0,1,1,0,0,1,1,0,1,0,0,0
+Syracuse NY,0,1,1,0,0,1,1,1,1,0,0,0
+Ithaca NY,0,0,1,0,1,1,1,1,1,0,0,1
+Hartford CT,0,1,0,0,0,1,1,1,0,1,0,0
+Stamford CT,0,0,0,1,1,0,1,1,0,1,0,0
+Worcester MA,0,1,0,0,0,1,1,1,0,1,0,0
+Springfield MA,0,1,0,0,0,1,1,1,0,0,0,0
+Manchester NH,0,1,1,0,0,1,1,0,1,1,0,0
+Concord NH,0,1,1,0,1,1,1,0,1,0,0,0
+Augusta ME,0,1,1,0,0,1,1,1,1,0,0,0
+San Juan PR,1,1,1,1,1,0,1,1,0,1,1,1
+Ponce PR,1,1,1,1,1,1,0,0,1,0,1,1
+Charlotte Amalie VI,1,0,1,1,1,1,0,1,0,0,1,0
+Cruz Bay VI,1,0,1,1,1,1,0,1,1,0,1,0
+Christiansted VI,1,1,1,1,1,1,0,1,1,0,1,0
+Kihei HI,1,0,1,1,0,1,0,1,0,0,1,0
+Lahaina HI,1,0,1,1,1,1,0,1,0,0,1,1
+Hilo HI,1,1,1,1,1,1,1,1,1,0,0,1
+Kailua-Kona HI,1,0,1,1,0,1,0,1,1,0,1,0
+Lihue HI,1,0,1,1,0,1,0,1,1,0,1,0
+Friday Harbor WA,0,0,1,1,1,1,0,1,1,0,0,1
+Bainbridge Island WA,0,0,1,1,1,1,1,1,1,0,0,1
+Nantucket MA,0,0,1,1,1,1,0,1,1,0,0,1
+Edgartown MA,0,0,1,1,1,1,0,1,1,0,0,1
+Avalon CA,1,0,1,1,1,1,0,1,1,0,1,0
+Sanibel FL,1,0,1,1,0,1,0,0,1,0,1,0
+Marco Island FL,1,0,1,1,0,1,0,0,1,0,1,0
+Fernandina Beach FL,1,0,1,1,1,1,0,0,1,0,1,0
+South Padre Island TX,1,1,1,1,1,1,0,0,0,0,1,0
+Tybee Island GA,1,1,1,1,1,1,0,0,1,0,1,0
+Bar Harbor ME,0,0,1,1,1,1,0,1,1,0,0,1
+Mackinac Island MI,0,0,1,1,1,1,0,0,1,0,0,0
+Chincoteague VA,0,1,1,1,1,1,0,0,1,0,1,0
+Ocracoke NC,1,1,1,1,1,1,0,0,1,0,1,0
+Hilton Head Island SC,1,0,1,1,0,1,1,0,0,0,1,0
